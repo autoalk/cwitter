@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#sox, php5-cli, php5-gd, imagemagick,ffmpeg
+#sox,imagemagick,ffmpeg
 import os
 from twython import Twython
 from twython import TwythonError
@@ -94,7 +94,6 @@ def main():
 	import config as c
 	api = Twython(c.APP_KEY, c.APP_SECRET,c.OAUTH_TOKEN, c.OAUTH_TOKEN_SECRET)
 	
-	#vurl='https://www.youtube.com/watch?v='
 	lastid_folder='./lastids/'
 	search_file='search.txt'
 	filter_file='filter.txt'
